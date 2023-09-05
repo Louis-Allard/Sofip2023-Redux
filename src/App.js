@@ -8,8 +8,8 @@ import Compare from './Components/Compare';
 function App() {
   return (
     <Provider store={store}> 
-        <NewValues label="Premier Input" />
-        <NewValues label="Deuxième Input" />
+        <NewValues label="Valeur A" />
+        <NewValues label="Valeur B" />
         <Compare />
     </Provider>
   );
