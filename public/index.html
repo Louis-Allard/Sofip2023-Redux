@@ -18,15 +18,9 @@
     <div id="root"></div>
   </body>
   <script>
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('/src/service-worker.js')
-        .then((registration) => {
-          console.log('Service Worker enregistré avec succès : ', registration);
-        })
-        .catch((error) => {
-          console.log('Erreur lors de l\'enregistrement du Service Worker : ', error);
-        });
-    }
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('../src/service-worker.js', { scope: './' });
+}
   </script>
   
 </html>
