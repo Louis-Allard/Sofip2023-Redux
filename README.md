@@ -81,7 +81,3 @@ Il sagit d'un fichier json placé à la racine de l'application. Il permet de d�
 - AMP (Accelerated Mobile Page), pour gérer la compression des images.
 
 - Lighthouse => Permet de tester l'application
-
-
-
-

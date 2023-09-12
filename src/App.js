@@ -6,6 +6,10 @@ import NewValues from './Components/NewValues';
 import Compare from './Components/Compare';
 
 function App() {
+  // PWA - Service Worker
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("serviceworker.js");
+  }
   return (
     <Provider store={store}> 
         <NewValues label="Valeur A" />
